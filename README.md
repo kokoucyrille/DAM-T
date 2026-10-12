@@ -14,6 +14,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+La version NumPy est verrouillée à `2.3.3` pour éviter le blocage de `numpy.random._common` sous Windows lors de l’import des bibliothèques natives par les politiques de contrôle d’application.
+
 Les données pré-calculées sont déjà dans `data/processed/`. Polices et icônes sont embarquées (`assets/embedded_fonts.css`) :
 l'application fonctionne **sans Internet**, cartes comprises (Plotly/maplibre sans tuiles). Seule l'option
 « Fond OpenStreetMap » (menu Routes & auto-écoles, Folium) demande une connexion ; hors connexion, polygones et réseau restent visibles.

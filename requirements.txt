@@ -1,5 +1,5 @@
 streamlit>=1.50
 pandas>=2.0
-numpy>=1.26
+numpy==2.3.3
 plotly>=6.0
 folium>=0.17
